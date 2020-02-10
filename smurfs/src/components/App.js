@@ -5,6 +5,8 @@ import Smurfs from "../components/Smurfs";
 import SmurfsList from "../components/SmurfsList";
 import Forms from "../components/Forms";
 import "./App.css";
+import title from "../components/images/title.png";
+
 function App() {
   const [getSmurfs, setGetSmurfs] = useState([]);
   useEffect(() => {
@@ -17,7 +19,8 @@ function App() {
 
   return (
     <div className="App">
-    <h1> ADD SMURFS </h1>
+      <img src={title} />
+
       <SmurfContext.Provider value={{ getSmurfs, setGetSmurfs }}>
         <Forms />
         <SmurfsList />

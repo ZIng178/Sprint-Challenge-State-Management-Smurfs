@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Lemonada&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
 html,
 body {
   width: 100%;
@@ -7,7 +9,7 @@ body {
   padding: 0;
 }
 body {
-  background-color: #464159;
+  margin: 0px;
 }
 
 h1,
@@ -20,7 +22,7 @@ div,
 p,
 span {
   color: white;
-  font-family: "Roboto", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
 }
 
 .App {
@@ -28,13 +30,61 @@ span {
 }
 
 form > input {
-  background-color: #464159;
+  background-color: white;
   border: 0;
   padding: 6px 0;
   font-size: 1.2rem;
   width: 190px;
   outline: 0;
-  color: white;
+  color: blue;
   border-bottom: 1px solid white;
   margin-right: 8px;
+}
+
+.smurfdisplay {
+ color: white;
+  font-weight: bolder;
+  font-family: "lemonada";
+  border: 4px solid blue;
+  font-size: 2.9vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 30%;
+  margin-left: 33%;
+  background-image: url("../components/images/giphy.gif");
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity : 0.9;
+}
+.delete {
+  border: 3.4px solid blue;
+
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 12px;
+  border-image: -webkit-linear-gradient(right, #fdc830, #f37335);
+  border-image-slice: 5;
+}
+
+.delete:hover {
+  border: none;
+  background-image: -webkit-linear-gradient(right, #fdc830, #f37335);
+}
+
+.submitbutton {
+  background-color: transparent;
+  color: blue;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 12px;
+  border-image: -webkit-linear-gradient(right, #3033fd, #3835f3);
+  border-image-slice: 5;
+  border-radius: 10px;
+}
+.submitbutton:hover {
+  border: none;
+  background-image: -webkit-linear-gradient(right, #ffd30f, #ffd30f);
+  border-radius: 10px;
 }

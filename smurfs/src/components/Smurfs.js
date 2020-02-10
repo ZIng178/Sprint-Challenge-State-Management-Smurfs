@@ -12,11 +12,13 @@ const Smurfs = ({ smurf }) => {
   };
   return (
     <div className="smurfdisplay">
-      <p>{smurf.name}</p>
+    <div>
+      <p>Smurf {smurf.name} </p>
       <p>{smurf.age}</p>
-      <p>{smurf.height}</p>
-      <p>{smurf.id}</p>
-      <button onClick={() => handleDelete(smurf.id)}> DELETE</button>
+      <p>{smurf.height} cm</p>
+      <p>ID :{smurf.id}</p>
+      <button className="delete" onClick={() => handleDelete(smurf.id)}> DELETE</button>
+    </div>
     </div>
   );
 };
